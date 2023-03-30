@@ -1,0 +1,70 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/* = 10px */
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+  
+
+  /*
+   *    layouts 
+   */
+
+.container{
+    max-width: 95%;
+    margin: 0 auto;
+    width: 100rem;
+}
+
+
+
+
+
+
+
+.option{
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+
+.option__form{
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.option__label{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.option__input{
+    padding: .5rem;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    margin-top: .5rem;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+.btn__success{
+    background-color: rgb(81, 223, 91);
+}
+
+
+.pass{
+    margin: 3rem 0;
+}

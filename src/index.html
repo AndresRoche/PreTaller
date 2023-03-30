@@ -5,28 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div>
-        <input type="checkbox" name="0" id="minuscula" checked/>
-        <label for="minuscula">con el alfabeto abcdeh...zyx</label>
-        <br>
-        <input type="checkbox" name="1" id="mayusculas" checked/>
-        <label for="mayusculas">con el alfabeto ABCDEH...ZYX</label>
-        <br>
-        <input type="checkbox" name="2" id="numeros" checked/>
-        <label for="numeros">numeros decimal del 1 2 3 4 5 6 7 8 9 0</label>
-        <br>
-        <input type="checkbox" name="3" id="punto" />
-        <label for="punto">los signos de . : , ; - _ / ! # </label>
-        <br>
-        <label for="largo">lo largo que seria el texto (mientras mas largo mejor)</label><br>
-        <input type="number" name="" id="largo" value="10"/>
-        <br>
-        <button id="generar">general contraseña</button>
+    <main class="container">
+        <div class="option">
+            <div class="option__form">
+                <input class="option__check" type="checkbox" name="0" id="minuscula" checked/>
+                <label class="option__label" for="minuscula">con el alfabeto abcdeh...zyx</label>   
+            </div>
+            
+            <div class="option__form">
+                <input class="option__check" type="checkbox" name="1" id="mayusculas" checked/>
+                <label class="option__label" for="mayusculas">con el alfabeto ABCDEH...ZYX</label>
+            </div>
+            
+            <div class="option__form">
+                <input class="option__check" type="checkbox" name="2" id="numeros" checked/>
+                <label class="option__label" for="numeros">numeros decimal del 1 2 3 4 5 6 7 8 9 0</label>
+            </div>
+            
+            <div class="option__form">
+                <input class="option__check" type="checkbox" name="3" id="punto" />
+                <label class="option__label" for="punto">los signos de . : , ; - _ / ! # </label>
+            </div>
 
-        <h3 id="pass"></h3>
-    </div>
+            <div class="option__form">
+                <label class="option__label--input option__label" for="largo">lo largo que seria el texto (mientras mas largo mejor)</label>
+                <input class="option__input" type="number" name="" id="largo" value="10"/>
+                
+            </div>
+
+            <div class="option__form">
+                <button class="btn btn__success" id="generar">general contraseña</button>
+            </div>
+
+        </div>
+    
+        <div class="option pass">
+            <div class="container">
+                <h1 class="pass__p" id="pass"></h1>
+            </div>
+        </div>
+    </main> 
+        
     <script src="index.js"></script>
+    
 </body>
 </html>

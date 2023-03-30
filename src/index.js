@@ -86,15 +86,17 @@ document.getElementById("generar").addEventListener('click', e => {
     pass = ""
 
     for(var i = 0; i < largo.value; i++){
-        var ale = aleatorio(0, opcion.length -1)
-        var list = caracteres[opcion[ale]]
-        var a = aleatorio(0,list.length-1)
-        pass += list.charAt(a)
+        pass += aleatorioLetras();
     }
 
     text.textContent = pass;
 
 })
 
-
+function aleatorioLetras(){
+    var ale = aleatorio(0, opcion.length -1)
+    var list = caracteres[opcion[ale]]
+    var a = aleatorio(0,list.length-1)
+    return list.charAt(a)
+}
 
